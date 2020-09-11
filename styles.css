@@ -270,7 +270,7 @@ body {
 .about-me__name {
     font-size: 80px;
     font-weight: 900;
-    color: #1F1F24;
+    color: red;
 }
 
 .about-me__name_descrip {
