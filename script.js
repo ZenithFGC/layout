@@ -3,6 +3,8 @@ $(document).ready(function(){
       backgrd = $('.modal__background'),
       navBackgrd = $('.nav__background')
       modalForm = $('.modal__order'),
+      modalSuccess = $('.modal__success'),
+      window = $('.window'),
       button = $('.button'),
       burger = $('.burger'),
       list = $('.nav__burger-list'),
@@ -33,9 +35,12 @@ $(document).ready(function(){
         body.removeClass('locker');
         backgrd.removeClass('background_show');
           setTimeout( function(){
-            modalForm .css('display', 'none')
+            modalForm.css('display', 'none')
+            modalSuccess.css('display', 'none')
             }, 300);
             modalForm.animate({opacity: 0, top: '40%'}, 280);
+            modalSuccess.animate({opacity: 0, top: '40%'}, 280);
+            
     };
 
       button.on('click', scrollFormOn);

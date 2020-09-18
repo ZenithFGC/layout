@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Дипломный</title>
+        <title>Дмитрий Алексеев Frontend-разработчик</title>
         <link rel="stylesheet" href="swiper.min.css">
         <link rel="stylesheet" type="text/css" href="styles.css">
         <script src="https://use.fontawesome.com/dd1a44e7ec.js"></script>
@@ -26,6 +26,9 @@
                         <p>C</p><input type="time" class="modal__input" name = "from"><p>До</p><input type="time" class="modal__input" name = "to">
                         <input type="submit" class="modal__submit modal__submit_order">
                     </form>
+                </div>
+                <div class="window modal__success">
+                    <h4>Спасибо, Ваша заявка принята! Ожидайте звонка.</h4>
                 </div>
             </div>
          </div>
@@ -193,8 +196,14 @@
                     });
 
                     return false;
-
+                },
+                submitHandler: function() {
+                    $(".modal__success").show();
+                    $(".modal__success").css({'opacity': 1,
+                                              'top': '50%' });
+                    $(".modal__order").hide();
                 }
+                    
             });
            
         </script>

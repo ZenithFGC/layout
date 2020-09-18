@@ -78,7 +78,29 @@ body {
     
 }
 
+.modal__success {
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 400px;
+    background: linear-gradient( to top right, #FF8F5A 25%, #FF2F96);
+    padding: 123px 30px 30px 30px;
+    font-size: 40px;
+    text-align: center;
+    color: #f9f9f9;
+    display: none;
+}
+
 .modal__order {
+    top: 40%;
+    left: 50%;
+    width: 500px;
+    height: 400px;
+    background: linear-gradient( to top right, #FF8F5A 25%, #FF2F96);
+    display: none;
+}
+
+.modal__receipt {
     top: 40%;
     left: 50%;
     width: 500px;
@@ -133,6 +155,7 @@ body {
     width: 70%;
     height: 100px;
 }
+
 
 .slider__image {
     width: 100%;
@@ -270,7 +293,7 @@ body {
 .about-me__name {
     font-size: 80px;
     font-weight: 900;
-    color: #262626;
+    color: #1F1F24;
 }
 
 .about-me__name_descrip {
@@ -1341,6 +1364,9 @@ body {
     .modal__order {
         width: 300px;
     }
+    .modal__receipt {
+        width: 300px;
+    }
 }
 
 @media(max-width: 351px) {
@@ -1413,6 +1439,9 @@ body {
 
 @media (max-height: 385px) {
     .modal__order{
+        height: 317px;
+    }
+    .modal__receipt {
         height: 317px;
     }
     .window {
