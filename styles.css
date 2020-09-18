@@ -1364,6 +1364,11 @@ body {
     .modal__order {
         width: 300px;
     }
+    .modal__success {
+        width: 300px;
+        padding-top: 85px;
+        font-size: 36px;
+    }
     .modal__receipt {
         width: 300px;
     }
@@ -1439,6 +1444,9 @@ body {
 
 @media (max-height: 385px) {
     .modal__order{
+        height: 317px;
+    }
+    .modal__success {
         height: 317px;
     }
     .modal__receipt {
